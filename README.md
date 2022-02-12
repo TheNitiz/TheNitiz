@@ -60,8 +60,8 @@
 
     // Use a proxy
     GitHubCalendar(".calendar", "TheNitiz", {
-       proxy (username) {
-         return fetch(`https://your-proxy.com/github?user=${username}`)
+       proxy (TheNitiz) {
+         return fetch(`https://your-proxy.com/github?user=${TheNitiz}`)
        }
     }).then(r => r.text())
 </script>
